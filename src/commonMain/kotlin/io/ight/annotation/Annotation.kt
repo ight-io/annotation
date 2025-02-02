@@ -10,25 +10,21 @@ annotation class Ight {
     @SinceIght("0.0.1")
     annotation class DSL
 
+    @DslMarker
+    @SinceIght("0.0.1")
+    annotation class Action
 
     @DslMarker
     @SinceIght("0.0.1")
     annotation class State
 
+    @DslMarker
+    @SinceIght("0.0.1")
+    annotation class SideEffect
 
     @DslMarker
     @SinceIght("0.0.1")
     annotation class UIComponent
-
-
-    @DslMarker
-    @SinceIght("0.0.1")
-    annotation class Action
-
-
-    @DslMarker
-    @SinceIght("0.0.1")
-    annotation class SideEffect
 
 
     @DslMarker
@@ -58,7 +54,7 @@ annotation class Ight {
 
     @DslMarker
     @SinceIght("0.0.1")
-    annotation class App
+    annotation class Application
 
 }
 

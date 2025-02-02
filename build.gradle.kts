@@ -12,6 +12,8 @@ plugins {
 
 kotlin {
 
+    applyDefaultHierarchyTemplate()
+
     @OptIn(ExperimentalWasmDsl::class)
     wasmJs {
         browser {
@@ -28,16 +30,19 @@ kotlin {
     }
 
     androidTarget {
+        publishLibraryVariants("release")
         @OptIn(ExperimentalKotlinGradlePluginApi::class)
         compilerOptions {
             jvmTarget = JvmTarget.JVM_17
         }
     }
 
-
     iosX64()
     iosArm64()
+    macosX64()
+    macosArm64()
     iosSimulatorArm64()
+
     linuxX64()
 
     jvm()
