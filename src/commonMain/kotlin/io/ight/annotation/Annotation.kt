@@ -2,58 +2,58 @@ package io.ight.annotation
 
 
 @DslMarker
-@SinceIght("0.0.3")
+@SinceIght("0.0.1")
 annotation class Ight {
 
 
     @DslMarker
-    @SinceIght("0.0.3")
+    @SinceIght("0.0.1")
     annotation class DSL
 
     @DslMarker
-    @SinceIght("0.0.3")
+    @SinceIght("0.0.1")
     annotation class Action
 
     @DslMarker
-    @SinceIght("0.0.3")
+    @SinceIght("0.0.1")
     annotation class State
 
     @DslMarker
-    @SinceIght("0.0.3")
+    @SinceIght("0.0.1")
     annotation class SideEffect
 
     @DslMarker
-    @SinceIght("0.0.3")
+    @SinceIght("0.0.1")
     annotation class UIComponent
 
 
     @DslMarker
-    @SinceIght("0.0.3")
+    @SinceIght("0.0.1")
     annotation class Dispatcher
 
 
     @DslMarker
-    @SinceIght("0.0.3")
+    @SinceIght("0.0.1")
     annotation class DataSource
 
 
     @DslMarker
-    @SinceIght("0.0.3")
+    @SinceIght("0.0.1")
     annotation class DTO
 
 
     @DslMarker
-    @SinceIght("0.0.3")
+    @SinceIght("0.0.1")
     annotation class Route
 
 
     @DslMarker
-    @SinceIght("0.0.3")
+    @SinceIght("0.0.1")
     annotation class Feature
 
 
     @DslMarker
-    @SinceIght("0.0.3")
+    @SinceIght("0.0.1")
     annotation class Application
 
 }
@@ -72,7 +72,7 @@ annotation class SinceIght(val version : String)
  *
  */
 @Ight
-@SinceIght("0.0.3")
+@SinceIght("0.0.1")
 @MustBeDocumented
 annotation class DeprecatedIght(
     val message : String ,
@@ -85,7 +85,7 @@ annotation class DeprecatedIght(
  *
  */
 @Ight
-@SinceIght("0.0.3")
+@SinceIght("0.0.1")
 @MustBeDocumented
 annotation class DeprecatedSinceIght(
     val warningSince : String = "" ,
@@ -99,7 +99,7 @@ annotation class DeprecatedSinceIght(
  */
 @Ight
 @DslMarker
-@SinceIght("0.0.3")
+@SinceIght("0.0.1")
 annotation class ExperimentalIghtApi(
     val message : String ,
     val level : DeprecationLevel = DeprecationLevel.WARNING ,
@@ -111,7 +111,7 @@ annotation class ExperimentalIghtApi(
  */
 @Ight
 @DslMarker
-@SinceIght("0.0.3")
+@SinceIght("0.0.1")
 annotation class WeDontDoThisAnymore(
     val message : String ,
     val replaceWith : ReplaceWith = ReplaceWith("") ,
