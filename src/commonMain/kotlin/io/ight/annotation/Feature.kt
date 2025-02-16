@@ -1,6 +1,6 @@
 package io.ight.annotation
 
 
-@DslMarker
+@Ight
 @SinceIght("0.0.1")
-annotation class IghtViewModel
+annotation class Feature

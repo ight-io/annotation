@@ -16,13 +16,15 @@ kotlin {
 
     @OptIn(ExperimentalWasmDsl::class)
     wasmJs {
+        moduleName = "io.ight.annotation.wasm"
         browser {
-            val projectDirPath = project.projectDir.path
             commonWebpackConfig {
+                outputFileName = "annotation.js"
                 devServer = (devServer ?: KotlinWebpackConfig.DevServer()).apply {
                     static = (static ?: mutableListOf()).apply {
                         // Serve sources to debug inside browser
-                        add(projectDirPath)
+                        add(project.rootDir.path)
+                        add(project.projectDir.path)
                     }
                 }
             }
@@ -37,14 +39,10 @@ kotlin {
         }
     }
 
-    iosX64()
     iosArm64()
-    macosX64()
     macosArm64()
     iosSimulatorArm64()
-
     linuxX64()
-
     jvm()
 
 

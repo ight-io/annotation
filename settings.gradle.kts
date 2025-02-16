@@ -14,7 +14,7 @@ dependencyResolutionManagement {
 
     versionCatalogs {
         create("ight") {
-            from("io.ight:catalog:0.0.4")
+            from("io.ight:catalog:0.0.6")
         }
     }
 }
